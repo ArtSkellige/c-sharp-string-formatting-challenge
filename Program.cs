@@ -24,12 +24,12 @@ Console.WriteLine("Here's a quick comparison:\n");
 string comparisonMessage = "";
 
 comparisonMessage = currentProduct.PadRight(20);
-comparisonMessage += $"{currentReturn:P2}".PadLeft(9);
+comparisonMessage += $"{currentReturn:P2}".PadRight(9);
 comparisonMessage += $"{currentProfit:C}";
 comparisonMessage += "\n";
 
 comparisonMessage += newProduct.PadRight(20);
-comparisonMessage += $"{newReturn:P2}".PadLeft(9);
+comparisonMessage += $"{newReturn:P2}".PadRight(9);
 comparisonMessage += $"{newProfit:C}";
 
 Console.WriteLine(comparisonMessage);
